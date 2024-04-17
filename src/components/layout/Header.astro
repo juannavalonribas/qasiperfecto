@@ -2,39 +2,31 @@
 import { menuLinks } from "@/site-config";
 
 import Search from "../Search.astro";
-import ThemeToggle from "../ThemeToggle.astro";
+//import ThemeToggle from "../ThemeToggle.astro";
 
 const url = new URL(Astro.request.url);
 ---
 
 <header class="group relative mb-28 flex items-center sm:ps-[4.5rem]" id="main-header">
-	<div class="flex sm:flex-col">
+	<div class="flex justify-center sm:flex-col">
 		<a
 			aria-current={url.pathname === "/" ? "page" : false}
-			class="inline-flex items-center grayscale hover:filter-none sm:relative sm:inline-block"
+			class="inline-flex items-center sm:relative sm:inline-block"
 			href="/"
 		>
-			<svg
-				aria-hidden="true"
-				class="me-3 h-10 w-6 sm:absolute sm:start-[-4.5rem] sm:me-0 sm:h-20 sm:w-12"
-				fill="none"
-				focusable="false"
-				viewBox="0 0 272 480"
-				xmlns="http://www.w3.org/2000/svg"
-			>
-				<title>Logo</title>
-				<path
-					d="M181.334 93.333v-40L226.667 80v40l-45.333-26.667ZM136.001 53.333 90.667 26.667v426.666L136.001 480V53.333Z"
-					fill="#B04304"></path>
-				<path
-					d="m136.001 119.944 45.333-26.667 45.333 26.667-45.333 26.667-45.333-26.667ZM90.667 26.667 136.001 0l45.333 26.667-45.333 26.666-45.334-26.666ZM181.334 53.277l45.333-26.666L272 53.277l-45.333 26.667-45.333-26.667ZM0 213.277l45.333-26.667 45.334 26.667-45.334 26.667L0 213.277ZM136 239.944l-45.333-26.667v53.333L136 239.944Z"
-					fill="#FF5D01"></path>
-				<path
-					d="m136 53.333 45.333-26.666v120L226.667 120V80L272 53.333V160l-90.667 53.333v240L136 480V306.667L45.334 360V240l45.333-26.667v53.334L136 240V53.333Z"
-					fill="#53C68C"></path>
-				<path d="M45.334 240 0 213.334v120L45.334 360V240Z" fill="#B04304"></path>
-			</svg>
-			<span class="text-xl font-bold sm:text-2xl">Astro Cactus</span>
+
+      <svg class="me-3 h-16 sm:absolute sm:start-[-5.5rem] sm:me-0 sm:w-24 lg:w-16" viewBox="0 0 150 150" fill="none" xmlns="http://www.w3.org/2000/svg" focusable="false">
+        <rect width="150" height="150" rx="16" fill="#A7C957"/>
+        <circle cx="47.4679" cy="69.4679" r="31.4679" fill="#151B27"/>
+        <rect x="88.3234" y="98.0582" width="20.025" height="39.1394" rx="6" transform="rotate(135 88.3234 98.0582)" fill="#151B27"/>
+        <circle cx="46.9911" cy="69.9446" r="16.6875" fill="#A7C957"/>
+        <circle cx="105.79" cy="75.9883" r="27.6278" fill="#151B27"/>
+        <rect x="82.9293" y="70.1102" width="20.025" height="39.1394" rx="6" fill="#151B27"/>
+        <circle cx="105.215" cy="75.4127" r="14.3895" fill="#A7C957"/>
+        <rect x="65" y="71" width="14" height="18" fill="#151B27"/>
+        <rect x="72" y="83" width="15" height="11" fill="#151B27"/>
+        <path d="M79.9663 83.1175C80.4366 82.7427 81.129 82.8648 81.4428 83.3779L85.2442 89.5949C85.6935 90.3297 85.0656 91.251 84.2174 91.1014L74.7174 89.4263C73.8692 89.2768 73.5943 88.1963 74.2678 87.6595L79.9663 83.1175Z" fill="#A7C957"/>
+      </svg>
 		</a>
 		<nav
 			aria-label="Main menu"
@@ -56,7 +48,7 @@ const url = new URL(Astro.request.url);
 		</nav>
 	</div>
 	<Search />
-	<ThemeToggle />
+	<!--<ThemeToggle />-->
 	<mobile-button>
 		<button
 			aria-expanded="false"

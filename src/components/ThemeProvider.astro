@@ -1,6 +1,6 @@
 {/* Inlined to avoid FOUC. */}
 <script is:inline>
-	const lightModePref = window.matchMedia("(prefers-color-scheme: light)");
+	const lightModePref = window.matchMedia("(prefers-color-scheme: dark)");
 
 	function getUserPref() {
 		const storedTheme = typeof localStorage !== "undefined" && localStorage.getItem("theme");

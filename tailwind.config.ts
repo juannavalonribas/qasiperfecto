@@ -23,8 +23,8 @@ export default {
 	theme: {
 		extend: {
 			colors: {
-				bgColor: "hsl(var(--theme-bg) / <alpha-value>)",
-				textColor: "hsl(var(--theme-text) / <alpha-value>)",
+        bgColor: "hsl(var(--theme-bg))",
+				textColor: "hsl(var(--theme-text))",
 				link: "hsl(var(--theme-link) / <alpha-value>)",
 				accent: "hsl(var(--theme-accent) / <alpha-value>)",
 				"accent-2": "hsl(var(--theme-accent-2) / <alpha-value>)",
